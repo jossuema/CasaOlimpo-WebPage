@@ -1,0 +1,46 @@
+[
+    {
+        "nombre": "Johnny Arica Prado",
+        "descripcion": "Tengo 20 años y actualmente curso el Quinto Semestre en la Carrera de Ingenieria en Tecnologias de la Informacion en la Universidad Tecnica de Machala. Mis hobbies son: Editar videos, jugar futbol, ir al gimnasio y hacer natacion.",
+        "puesto": "Diseñador",
+        "foto": "johnny.jpg",
+        "foto_fondo": "johnny_fondo.jpg",
+        "email": "jarica@utmachala.edu.ec",	
+        "github": "JohnnyAriPra",
+        "facebook": "JohnnyAriPra11",
+        "instagram": "johhny_arica"
+    },
+    {
+        "nombre": "Manuel Josue Malla",
+        "descripcion": "Tengo 20 años y actualmente curso el Quinto Semestre en la Carrera de Ingenieria en Tecnologias de la Informacion en la Universidad Tecnica de Machala. Mis hobbies son: Jugar futbol, ir al gimnasio y hacer natacion.",
+        "puesto": "Desarrollador",
+        "foto": "josue.jpg",
+        "foto_fondo": "josue_fondo.jpg",
+        "email": "mmalla1@utmachala.edu.ec",
+        "github": "jossuema",
+        "facebook": "",
+        "instagram": "josuema_th"
+    },
+    {
+        "nombre": "Paul Altafuya Zambrano",
+        "descripcion": "Tengo 20 años y actualmente me encuentro cursando el Quinto Semestre de la Carrera de Ingeniería en Tecnologías de la Información en la Universidad Técnica de Machala. Resido en la ciudad de Machala, Ecuador.",
+        "puesto": "Administrador de Base de Datos",
+        "foto": "paul.jpg",
+        "foto_fondo": "paul_fondo.jpg",
+        "email": "altafuyapaul62@gmail.com",
+        "github": "paulzamm",
+        "facebook": "A.P.A.Z10",
+        "instagram": "paul.zamm"
+    },
+    {
+        "nombre": "Josue Alberto Barba Zambrano",
+        "descripcion": "Tengo 20 años y actualmente me encuentro cursando el Quinto Semestre de la Carrera de Ingeniería en Tecnologías de la Información en la Universidad Técnica de Machala, actualmente vivo en Machala-Ecuador.",
+        "puesto": "Desarrollador",
+        "foto": "barba.jpg",
+        "foto_fondo": "barba_fondo.jpg",
+        "email": "jbarba1@utmachala.edu.ec",
+        "github": "ImJosueBarba",
+        "facebook": "",
+        "instagram": ""
+    }
+]

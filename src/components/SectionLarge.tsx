@@ -4,6 +4,7 @@ interface Props {
   pageHeaderBgImg: string;
   pageHeaderMinVh: string;
   pageHeaderRadius: string;
+  linkbtn: string;
 }
 
 export default function SectionLarge({
@@ -12,6 +13,7 @@ export default function SectionLarge({
   pageHeaderBgImg,
   pageHeaderMinVh,
   pageHeaderRadius,
+  linkbtn,
 }: Props) {
 
   const styles = {
@@ -36,7 +38,17 @@ export default function SectionLarge({
                 <div className="w-full sm:w-9/12 lg:w-8/12 text-center mx-auto bg-transparent">
                   <h1 className="text-white text-3xl mb-4 z-30">{title}</h1>
                   <p className="text-white text-lg leading-relaxed mb-6 sm:mb-4 z-30">{full_description}</p>
-                  <button className="bg-white text-gray-800 font-semibold py-2 px-4 text-lg rounded z-30">Productos</button>
+                  {linkbtn === "" ? null : (
+                    <button
+                      className="bg-white text-gray-800 font-semibold py-2 px-4 text-lg rounded z-30"
+                      type="button"
+                      onClick={() => {
+                        window.location.href = linkbtn;
+                      }}
+                    >
+                      Productos
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

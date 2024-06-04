@@ -1,0 +1,49 @@
+---
+import Navbar from "../components/Navbar"
+import SectionLarge from "../components/SectionLarge"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Contacto">
+    <Navbar/>
+    <SectionLarge
+		title={"Contacte con nosotros"}
+		full_description= {"Contacta con nosotros y recibe ayuda, estamos siempre atentos!."} 
+		pageHeaderBgImg={"../images/bg2.jpg"}
+		pageHeaderMinVh="70vh"
+		pageHeaderRadius= "90 90 0 0"
+        linkbtn=""
+	/>
+    <div class="bg-gray-900 text-white p-8">
+        <div class="container mx-auto">
+            <form>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <input type="text" placeholder="First Name" class="bg-gray-800 p-3 rounded"/>
+                    <input type="text" placeholder="Last Name" class="bg-gray-800 p-3 rounded"/>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <input type="email" placeholder="Your email" class="bg-gray-800 p-3 rounded"/>
+                    <input type="tel" placeholder="Phone Number" class="bg-gray-800 p-3 rounded"/>
+                </div>
+                <textarea placeholder="Your message" class="bg-gray-800 p-3 rounded mb-4 resize-none w-full h-52"></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enviar mensaje</button>
+            </form>
+            <div class="flex justify-between mt-8">
+                <div>
+                    <p>Escribenos un correo:</p>
+                    <a href="mailto:hello@flowbite.com" class="underline">casaolimpo@gmail.com</a>
+                </div>
+                <div>
+                    <p>Llamanos:</p>
+                    <a href="tel:+16467865060" class="underline">+1 (646) 786-5060</a>
+                </div>
+                <div>
+                    <p>Support:</p>
+                    <a href="/" class="underline">
+                        Centro de soporte
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

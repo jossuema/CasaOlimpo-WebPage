@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "nombre": "Hoodie Gris",
+        "descripcion": "Hoodie gris con logo de la marca en la parte frontal",
+        "precio": "50.23",
+        "marca": "Nike",
+        "img_url": "img1.jpg"
+    },
+    {
+        "id": "2",
+        "nombre": "Hoodie Under Armour",
+        "descripcion": "Hoodie Under Armour con logo de la marca en la parte frontal",
+        "precio": "60.23",
+        "marca": "Under Armour",
+        "img_url": "img2.jpg"
+    }
+]

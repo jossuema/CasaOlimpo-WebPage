@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-
 const Navbar = () => {
   const navItems = [
     { id: 1, text: 'HOME', link: '/'},
-    { id: 2, text: 'PRODUCTOS', link: '/products'},
-    { id: 3, text: 'CATEGORIAS', link: '/categories'},
-    { id: 4, text: 'NOSOTROS', link: '/about'},
-    { id: 5, text: 'CONTACTO', link: '/contact'},
+    { id: 2, text: 'PRODUCTOS', link: '/productos'},
+    { id: 3, text: 'CATEGORIAS', link: '/categorias'},
+    { id: 4, text: 'NOSOTROS', link: '/nosotros'},
+    { id: 5, text: 'CONTACTO', link: '/contacto'},
   ];
 
   return (

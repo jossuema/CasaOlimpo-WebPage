@@ -10,12 +10,12 @@ import CardPersonal from "../components/CardPersonal.astro"
     <Navbar />
     <div class="relative min-h-screen">
         <!-- Fondo fijo con desenfoque y tamaño ajustado -->
-        <div class="fixed inset-0 w-full h-full bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200 blur-xl"></div>
+        <div class="fixed inset-0 w-full h-full bg-gradient-to-r from-yellow-500 via-amber-600 to-yellow-500"></div>
         
         <!-- Contenido que se desplaza sobre el fondo -->
         <div class="relative z-10 flex flex-col items-center justify-center min-h-screen space-y-8 mt-32">
             <h1 class="text-4xl font-bold text-gray-800">Acerca de nosotros</h1>
-            <p class="text-xl text-gray-600">Contacta con nosotros y recibe ayuda, estamos siempre atentos!</p>
+            <p class="text-xl text-gray-600">Equipo de quienes conforman y administran Casa Olimpo.</p>
             <div class="flex flex-wrap justify-center gap-4 p-2 mt-28">
                 {data.map((author) => (
                     <CardPersonal

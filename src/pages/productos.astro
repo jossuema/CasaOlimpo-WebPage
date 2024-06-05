@@ -2,15 +2,15 @@
 import CardProduct from "../components/CardProduct";
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
+import data from "../../data/data.json";
 ---
 
 <Layout title="Productos">
     <Navbar />
     <div class="flex flex-wrap justify-center gap-4 p-2 mt-28">
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
+        {data.map((product) => (
+            <CardProduct producto={product} />
+        ))}
     </div>
   <h1>Home</h1>
 </Layout>

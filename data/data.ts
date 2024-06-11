@@ -1,4 +1,6 @@
-[
+import type { Producto } from "../src/services/fetchData"
+
+export const productos: Producto[] = [
     {
         "id": 17,
         "nombre": "Camiseta Adidas",
@@ -6,7 +8,13 @@
         "precio": 29.99,
         "marca": "Adidas",
         "img_url": "img17.jpg",
-        "categorias": ["camisetas", "adidas", "hombre", "blanco", "algodon"]
+        "categorias": [
+            "camisetas",
+            "adidas",
+            "hombre",
+            "blanco",
+            "algodon"
+        ]
     },
     {
         "id": 18,
@@ -15,7 +23,11 @@
         "precio": 19.99,
         "marca": "New Era",
         "img_url": "img18.jpg",
-        "categorias": ["gorras", "new era", "hombre"]
+        "categorias": [
+            "gorras",
+            "new era",
+            "hombre"
+        ]
     },
     {
         "id": 19,
@@ -24,7 +36,13 @@
         "precio": 59.99,
         "marca": "Under Armour",
         "img_url": "img19.jpg",
-        "categorias": ["sudaderas", "under armour", "hombre", "azul", "algodon"]
+        "categorias": [
+            "sudaderas",
+            "under armour",
+            "hombre",
+            "azul",
+            "algodon"
+        ]
     },
     {
         "id": 20,
@@ -33,7 +51,13 @@
         "precio": 89.99,
         "marca": "Levi's",
         "img_url": "img20.jpg",
-        "categorias": ["pantalones", "levis", "hombre", "azul", "mezclilla"]
+        "categorias": [
+            "pantalones",
+            "levis",
+            "hombre",
+            "azul",
+            "mezclilla"
+        ]
     },
     {
         "id": 21,
@@ -42,7 +66,13 @@
         "precio": 24.99,
         "marca": "Puma",
         "img_url": "img21.jpg",
-        "categorias": ["camisetas", "puma", "hombre", "rojo", "poliester"]
+        "categorias": [
+            "camisetas",
+            "puma",
+            "hombre",
+            "rojo",
+            "poliester"
+        ]
     },
     {
         "id": 22,
@@ -51,7 +81,11 @@
         "precio": 99.99,
         "marca": "The North Face",
         "img_url": "img22.jpg",
-        "categorias":["chaqueta", "negro", "north face"]
+        "categorias": [
+            "chaqueta",
+            "negro",
+            "north face"
+        ]
     },
     {
         "id": 23,
@@ -60,7 +94,11 @@
         "precio": 34.99,
         "marca": "Nike",
         "img_url": "img23.jpg",
-        "categorias": ["shorts", "gris", "nike"]
+        "categorias": [
+            "shorts",
+            "gris",
+            "nike"
+        ]
     },
     {
         "id": 24,
@@ -69,7 +107,11 @@
         "precio": 12.99,
         "marca": "Adidas",
         "img_url": "img24.jpg",
-        "categorias": []
+        "categorias": [
+            "calcetines",
+            "blancos",
+            "adidas"
+        ]
     },
     {
         "id": 25,
@@ -77,7 +119,13 @@
         "descripcion": "Chaleco de lana color verde con logo Patagonia en el pecho",
         "precio": 79.99,
         "marca": "Patagonia",
-        "img_url": "img25.jpg"
+        "img_url": "img25.jpg",
+        "categorias": [
+            "chaleco",
+            "lana",
+            "verde",
+            "patagonia"
+        ]
     },
     {
         "id": 27,
@@ -85,7 +133,14 @@
         "descripcion": "Camiseta color gris con logo Tommy Hilfiger en el pecho",
         "precio": 39.99,
         "marca": "Tommy Hilfiger",
-        "img_url": "img27.jpg"
+        "img_url": "img27.jpg",
+        "categorias": [
+            "camisetas",
+            "tommy hilfiger",
+            "hombre",
+            "gris",
+            "algodon"
+        ]
     },
     {
         "id": 28,
@@ -93,7 +148,14 @@
         "descripcion": "Sudadera con capucha color roja y logo GAP en el pecho",
         "precio": 49.99,
         "marca": "GAP",
-        "img_url": "img28.jpg"
+        "img_url": "img28.jpg",
+        "categorias": [
+            "sudaderas",
+            "gap",
+            "hombre",
+            "rojo",
+            "algodon"
+        ]
     },
     {
         "id": 29,
@@ -101,7 +163,14 @@
         "descripcion": "Camiseta color negra con logo Calvin Klein en el pecho",
         "precio": 44.99,
         "marca": "Calvin Klein",
-        "img_url": "img29.jpg"
+        "img_url": "img29.jpg",
+        "categorias": [
+            "camisetas",
+            "calvin klein",
+            "hombre",
+            "negro",
+            "algodon"
+        ]
     },
     {
         "id": 30,
@@ -109,7 +178,14 @@
         "descripcion": "Pantalones chinos color beige con logo Dockers",
         "precio": 54.99,
         "marca": "Dockers",
-        "img_url": "img30.jpg"
+        "img_url": "img30.jpg",
+        "categorias": [
+            "pantalones",
+            "dockers",
+            "hombre",
+            "beige",
+            "algodon"
+        ]
     },
     {
         "id": 31,
@@ -117,7 +193,14 @@
         "descripcion": "Camisa de vestir color azul con logo Ralph Lauren en el pecho",
         "precio": 89.99,
         "marca": "Ralph Lauren",
-        "img_url": "img31.jpg"
+        "img_url": "img31.jpg",
+        "categorias": [
+            "camisas",
+            "ralph lauren",
+            "hombre",
+            "azul",
+            "algodon"
+        ]
     },
     {
         "id": 32,
@@ -125,7 +208,14 @@
         "descripcion": "Chaqueta casual color verde con cierre de cremallera",
         "precio": 59.99,
         "marca": "H&M",
-        "img_url": "img32.jpg"
+        "img_url": "img32.jpg",
+        "categorias": [
+            "chaquetas",
+            "h&m",
+            "hombre",
+            "verde",
+            "poliester"
+        ]
     },
     {
         "id": 33,
@@ -133,7 +223,14 @@
         "descripcion": "Falda color negro, estilo lápiz con logo Zara",
         "precio": 29.99,
         "marca": "Zara",
-        "img_url": "img33.jpg"
+        "img_url": "img33.jpg",
+        "categorias": [
+            "faldas",
+            "zara",
+            "mujer",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 34,
@@ -141,7 +238,14 @@
         "descripcion": "Vestido largo color rojo con diseño floral y logo Mango",
         "precio": 79.99,
         "marca": "Mango",
-        "img_url": "img34.jpg"
+        "img_url": "img34.jpg",
+        "categorias": [
+            "vestidos",
+            "mango",
+            "mujer",
+            "rojo",
+            "algodon"
+        ]
     },
     {
         "id": 35,
@@ -149,7 +253,14 @@
         "descripcion": "Abrigo acolchado color negro con logo Uniqlo",
         "precio": 129.99,
         "marca": "Uniqlo",
-        "img_url": "img35.jpg"
+        "img_url": "img35.jpg",
+        "categorias": [
+            "abrigos",
+            "uniqlo",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 36,
@@ -157,7 +268,14 @@
         "descripcion": "Pantalones de vestir color negro con logo Hugo Boss",
         "precio": 99.99,
         "marca": "Hugo Boss",
-        "img_url": "img36.jpg"
+        "img_url": "img36.jpg",
+        "categorias": [
+            "pantalones",
+            "hugo boss",
+            "hombre",
+            "negro",
+            "lana"
+        ]
     },
     {
         "id": 37,
@@ -165,7 +283,14 @@
         "descripcion": "Shorts deportivos color negro con logo Under Armour en el lateral",
         "precio": 39.99,
         "marca": "Under Armour",
-        "img_url": "img37.jpg"
+        "img_url": "img37.jpg",
+        "categorias": [
+            "shorts",
+            "under armour",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 38,
@@ -173,7 +298,14 @@
         "descripcion": "Zapatos deportivos color blanco con detalles en negro y logo Nike",
         "precio": 119.99,
         "marca": "Nike",
-        "img_url": "img38.jpg"
+        "img_url": "img38.jpg",
+        "categorias": [
+            "zapatos",
+            "nike",
+            "hombre",
+            "blanco",
+            "sintetico"
+        ]
     },
     {
         "id": 39,
@@ -181,7 +313,14 @@
         "descripcion": "Pantalones casual color azul marino con logo Calvin Klein",
         "precio": 79.99,
         "marca": "Calvin Klein",
-        "img_url": "img39.jpg"
+        "img_url": "img39.jpg",
+        "categorias": [
+            "pantalones",
+            "calvin klein",
+            "hombre",
+            "azul",
+            "algodon"
+        ]
     },
     {
         "id": 40,
@@ -189,7 +328,14 @@
         "descripcion": "Shorts deportivos color azul con logo Puma en el lateral",
         "precio": 29.99,
         "marca": "Puma",
-        "img_url": "img40.jpg"
+        "img_url": "img40.jpg",
+        "categorias": [
+            "shorts",
+            "puma",
+            "hombre",
+            "azul",
+            "poliester"
+        ]
     },
     {
         "id": 41,
@@ -197,7 +343,14 @@
         "descripcion": "Zapatos deportivos color gris con logo New Balance",
         "precio": 89.99,
         "marca": "New Balance",
-        "img_url": "img41.jpg"
+        "img_url": "img41.jpg",
+        "categorias": [
+            "zapatos",
+            "new balance",
+            "hombre",
+            "gris",
+            "sintetico"
+        ]
     },
     {
         "id": 42,
@@ -205,7 +358,14 @@
         "descripcion": "Pantalones de mezclilla color azul con logo Tommy Hilfiger",
         "precio": 99.99,
         "marca": "Tommy Hilfiger",
-        "img_url": "img42.jpg"
+        "img_url": "img42.jpg",
+        "categorias": [
+            "pantalones",
+            "tommy hilfiger",
+            "hombre",
+            "azul",
+            "mezclilla"
+        ]
     },
     {
         "id": 43,
@@ -213,7 +373,14 @@
         "descripcion": "Shorts deportivos color rojo con logo Reebok en el lateral",
         "precio": 34.99,
         "marca": "Reebok",
-        "img_url": "img43.jpg"
+        "img_url": "img43.jpg",
+        "categorias": [
+            "shorts",
+            "reebok",
+            "hombre",
+            "rojo",
+            "poliester"
+        ]
     },
     {
         "id": 44,
@@ -221,7 +388,14 @@
         "descripcion": "Zapatos casuales color negro con logo Converse",
         "precio": 59.99,
         "marca": "Converse",
-        "img_url": "img44.jpg"
+        "img_url": "img44.jpg",
+        "categorias": [
+            "zapatos",
+            "converse",
+            "hombre",
+            "negro",
+            "lona"
+        ]
     },
     {
         "id": 45,
@@ -229,7 +403,14 @@
         "descripcion": "Pantalones de mezclilla color negro con logo Zara",
         "precio": 49.99,
         "marca": "Zara",
-        "img_url": "img45.jpg"
+        "img_url": "img45.jpg",
+        "categorias": [
+            "pantalones",
+            "zara",
+            "hombre",
+            "negro",
+            "mezclilla"
+        ]
     },
     {
         "id": 46,
@@ -237,7 +418,14 @@
         "descripcion": "Pantalones chinos color beige con logo de Polo Ralph Lauren",
         "precio": 109.99,
         "marca": "Polo Ralph Lauren",
-        "img_url": "img46.jpg"
+        "img_url": "img46.jpg",
+        "categorias": [
+            "pantalones",
+            "ralph lauren",
+            "hombre",
+            "beige",
+            "algodon"
+        ]
     },
     {
         "id": 47,
@@ -245,7 +433,14 @@
         "descripcion": "Shorts deportivos color verde con tecnología Omni-Shade de Columbia",
         "precio": 44.99,
         "marca": "Columbia",
-        "img_url": "img47.jpg"
+        "img_url": "img47.jpg",
+        "categorias": [
+            "shorts",
+            "columbia",
+            "hombre",
+            "verde",
+            "poliester"
+        ]
     },
     {
         "id": 48,
@@ -253,7 +448,14 @@
         "descripcion": "Botas de cuero color marrón con suela resistente de Timberland",
         "precio": 149.99,
         "marca": "Timberland",
-        "img_url": "img48.jpg"
+        "img_url": "img48.jpg",
+        "categorias": [
+            "zapatos",
+            "timberland",
+            "hombre",
+            "marron",
+            "cuero"
+        ]
     },
     {
         "id": 49,
@@ -261,7 +463,14 @@
         "descripcion": "Pantalones cargo color caqui con múltiples bolsillos de GAP",
         "precio": 59.99,
         "marca": "GAP",
-        "img_url": "img49.jpg"
+        "img_url": "img49.jpg",
+        "categorias": [
+            "pantalones",
+            "gap",
+            "hombre",
+            "caqui",
+            "algodon"
+        ]
     },
     {
         "id": 50,
@@ -269,7 +478,14 @@
         "descripcion": "Shorts de baño color azul marino con estampado de flores de H&M",
         "precio": 19.99,
         "marca": "H&M",
-        "img_url": "img50.jpg"
+        "img_url": "img50.jpg",
+        "categorias": [
+            "shorts",
+            "h&m",
+            "hombre",
+            "azul",
+            "poliester"
+        ]
     },
     {
         "id": 51,
@@ -277,7 +493,14 @@
         "descripcion": "Zapatillas skate color negro con suela de goma de Vans",
         "precio": 64.99,
         "marca": "Vans",
-        "img_url": "img51.jpg"
+        "img_url": "img51.jpg",
+        "categorias": [
+            "zapatos",
+            "vans",
+            "hombre",
+            "negro",
+            "lona"
+        ]
     },
     {
         "id": 52,
@@ -285,7 +508,14 @@
         "descripcion": "Pantalones vaqueros clásicos color azul oscuro de Wrangler",
         "precio": 79.99,
         "marca": "Wrangler",
-        "img_url": "img52.jpg"
+        "img_url": "img52.jpg",
+        "categorias": [
+            "pantalones",
+            "wrangler",
+            "hombre",
+            "azul",
+            "mezclilla"
+        ]
     },
     {
         "id": 53,
@@ -293,7 +523,14 @@
         "descripcion": "Shorts deportivos color negro con rayas blancas de Adidas",
         "precio": 29.99,
         "marca": "Adidas",
-        "img_url": "img53.jpg"
+        "img_url": "img53.jpg",
+        "categorias": [
+            "shorts",
+            "adidas",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 54,
@@ -301,7 +538,14 @@
         "descripcion": "Zapatos casuales color gris con tecnología Memory Foam de Skechers",
         "precio": 54.99,
         "marca": "Skechers",
-        "img_url": "img54.jpg"
+        "img_url": "img54.jpg",
+        "categorias": [
+            "zapatos",
+            "skechers",
+            "hombre",
+            "gris",
+            "sintetico"
+        ]
     },
     {
         "id": 55,
@@ -309,7 +553,14 @@
         "descripcion": "Pantalones de vestir color gris con corte slim de Banana Republic",
         "precio": 89.99,
         "marca": "Banana Republic",
-        "img_url": "img55.jpg"
+        "img_url": "img55.jpg",
+        "categorias": [
+            "pantalones",
+            "banana republic",
+            "hombre",
+            "gris",
+            "lana"
+        ]
     },
     {
         "id": 56,
@@ -317,7 +568,14 @@
         "descripcion": "Calcetines deportivos cortos color blanco con logo Nike",
         "precio": 12.99,
         "marca": "Nike",
-        "img_url": "img56.jpg"
+        "img_url": "img56.jpg",
+        "categorias": [
+            "calcetines",
+            "nike",
+            "hombre",
+            "blanco",
+            "algodon"
+        ]
     },
     {
         "id": 57,
@@ -325,7 +583,14 @@
         "descripcion": "Medias largas color negro con las tres rayas de Adidas",
         "precio": 9.99,
         "marca": "Adidas",
-        "img_url": "img57.jpg"
+        "img_url": "img57.jpg",
+        "categorias": [
+            "medias",
+            "adidas",
+            "hombre",
+            "negro",
+            "algodon"
+        ]
     },
     {
         "id": 58,
@@ -333,7 +598,14 @@
         "descripcion": "Calcetines deportivos medianos color gris con logo Puma",
         "precio": 7.99,
         "marca": "Puma",
-        "img_url": "img58.jpg"
+        "img_url": "img58.jpg",
+        "categorias": [
+            "calcetines",
+            "puma",
+            "hombre",
+            "gris",
+            "algodon"
+        ]
     },
     {
         "id": 59,
@@ -341,7 +613,14 @@
         "descripcion": "Medias deportivas largas color blanco con logo Under Armour",
         "precio": 14.99,
         "marca": "Under Armour",
-        "img_url": "img59.jpg"
+        "img_url": "img59.jpg",
+        "categorias": [
+            "medias",
+            "under armour",
+            "hombre",
+            "blanco",
+            "poliester"
+        ]
     },
     {
         "id": 60,
@@ -349,7 +628,14 @@
         "descripcion": "Calcetines casuales cortos color azul marino con logo Converse",
         "precio": 10.99,
         "marca": "Converse",
-        "img_url": "img60.jpg"
+        "img_url": "img60.jpg",
+        "categorias": [
+            "calcetines",
+            "converse",
+            "hombre",
+            "azul",
+            "algodon"
+        ]
     },
     {
         "id": 61,
@@ -357,7 +643,14 @@
         "descripcion": "Medias deportivas cortas color negro con logo Reebok",
         "precio": 8.99,
         "marca": "Reebok",
-        "img_url": "img61.jpg"
+        "img_url": "img61.jpg",
+        "categorias": [
+            "medias",
+            "reebok",
+            "hombre",
+            "negro",
+            "algodon"
+        ]
     },
     {
         "id": 62,
@@ -365,7 +658,14 @@
         "descripcion": "Calcetines casuales medianos color blanco con tecnología Memory Foam de Skechers",
         "precio": 11.99,
         "marca": "Skechers",
-        "img_url": "img62.jpg"
+        "img_url": "img62.jpg",
+        "categorias": [
+            "calcetines",
+            "skechers",
+            "hombre",
+            "blanco",
+            "algodon"
+        ]
     },
     {
         "id": 63,
@@ -373,7 +673,14 @@
         "descripcion": "Medias de algodón clásicas color gris de Hanes",
         "precio": 6.99,
         "marca": "Hanes",
-        "img_url": "img63.jpg"
+        "img_url": "img63.jpg",
+        "categorias": [
+            "medias",
+            "hanes",
+            "hombre",
+            "gris",
+            "algodon"
+        ]
     },
     {
         "id": 64,
@@ -381,7 +688,14 @@
         "descripcion": "Calcetines deportivos largos color blanco con logo Champion",
         "precio": 13.99,
         "marca": "Champion",
-        "img_url": "img64.jpg"
+        "img_url": "img64.jpg",
+        "categorias": [
+            "calcetines",
+            "champion",
+            "hombre",
+            "blanco",
+            "algodon"
+        ]
     },
     {
         "id": 65,
@@ -389,7 +703,14 @@
         "descripcion": "Medias de algodón clásicas color negro de Fruit of the Loom",
         "precio": 5.99,
         "marca": "Fruit of the Loom",
-        "img_url": "img65.jpg"
+        "img_url": "img65.jpg",
+        "categorias": [
+            "medias",
+            "fruit of the loom",
+            "hombre",
+            "negro",
+            "algodon"
+        ]
     },
     {
         "id": 66,
@@ -397,7 +718,14 @@
         "descripcion": "Boxer de algodón color azul marino con estampado Vans",
         "precio": 24.99,
         "marca": "Vans",
-        "img_url": "img66.jpg"
+        "img_url": "img66.jpg",
+        "categorias": [
+            "ropa interior",
+            "vans",
+            "hombre",
+            "azul",
+            "algodon"
+        ]
     },
     {
         "id": 67,
@@ -405,7 +733,14 @@
         "descripcion": "Boxer de algodón color gris con cintura elástica Hanes",
         "precio": 14.99,
         "marca": "Hanes",
-        "img_url": "img67.jpg"
+        "img_url": "img67.jpg",
+        "categorias": [
+            "ropa interior",
+            "hanes",
+            "hombre",
+            "gris",
+            "algodon"
+        ]
     },
     {
         "id": 68,
@@ -413,7 +748,14 @@
         "descripcion": "Boxer de tela transpirable color blanco con logo Champion",
         "precio": 16.99,
         "marca": "Champion",
-        "img_url": "img68.jpg"
+        "img_url": "img68.jpg",
+        "categorias": [
+            "ropa interior",
+            "champion",
+            "hombre",
+            "blanco",
+            "poliester"
+        ]
     },
     {
         "id": 69,
@@ -421,7 +763,14 @@
         "descripcion": "Boxer de algodón color negro con logo Fruit of the Loom",
         "precio": 12.99,
         "marca": "Fruit of the Loom",
-        "img_url": "img69.jpg"
+        "img_url": "img69.jpg",
+        "categorias": [
+            "ropa interior",
+            "fruit of the loom",
+            "hombre",
+            "negro",
+            "algodon"
+        ]
     },
     {
         "id": 70,
@@ -429,7 +778,14 @@
         "descripcion": "Boxer deportivo color gris con diseño Puma",
         "precio": 22.99,
         "marca": "Puma",
-        "img_url": "img70.jpg"
+        "img_url": "img70.jpg",
+        "categorias": [
+            "ropa interior",
+            "puma",
+            "hombre",
+            "gris",
+            "poliester"
+        ]
     },
     {
         "id": 71,
@@ -437,7 +793,14 @@
         "descripcion": "Boxer de tela elástica color negro con las tres rayas Adidas",
         "precio": 19.99,
         "marca": "Adidas",
-        "img_url": "img71.jpg"
+        "img_url": "img71.jpg",
+        "categorias": [
+            "ropa interior",
+            "adidas",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 72,
@@ -445,7 +808,14 @@
         "descripcion": "Boxer de tela transpirable color azul con logo Nike",
         "precio": 29.99,
         "marca": "Nike",
-        "img_url": "img72.jpg"
+        "img_url": "img72.jpg",
+        "categorias": [
+            "ropa interior",
+            "nike",
+            "hombre",
+            "azul",
+            "poliester"
+        ]
     },
     {
         "id": 73,
@@ -453,7 +823,14 @@
         "descripcion": "Boxer de algodón color blanco con diseño Reebok",
         "precio": 21.99,
         "marca": "Reebok",
-        "img_url": "img73.jpg"
+        "img_url": "img73.jpg",
+        "categorias": [
+            "ropa interior",
+            "reebok",
+            "hombre",
+            "blanco",
+            "algodon"
+        ]
     },
     {
         "id": 74,
@@ -461,7 +838,14 @@
         "descripcion": "Boxer de algodón color verde con logo cocodrilo Lacoste",
         "precio": 34.99,
         "marca": "Lacoste",
-        "img_url": "img74.jpg"
+        "img_url": "img74.jpg",
+        "categorias": [
+            "ropa interior",
+            "lacoste",
+            "hombre",
+            "verde",
+            "algodon"
+        ]
     },
     {
         "id": 75,
@@ -469,7 +853,14 @@
         "descripcion": "Boxer vaquero color azul con diseño Levi's",
         "precio": 26.99,
         "marca": "Levi's",
-        "img_url": "img75.jpg"
+        "img_url": "img75.jpg",
+        "categorias": [
+            "ropa interior",
+            "levis",
+            "hombre",
+            "azul",
+            "mezclilla"
+        ]
     },
     {
         "id": 76,
@@ -477,7 +868,14 @@
         "descripcion": "Boxer deportivo color negro con tecnología HeatGear Under Armour",
         "precio": 31.99,
         "marca": "Under Armour",
-        "img_url": "img76.jpg"
+        "img_url": "img76.jpg",
+        "categorias": [
+            "ropa interior",
+            "under armour",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 77,
@@ -485,7 +883,14 @@
         "descripcion": "Boxer de tela suave color gris con logo Armani Exchange",
         "precio": 39.99,
         "marca": "Armani Exchange",
-        "img_url": "img77.jpg"
+        "img_url": "img77.jpg",
+        "categorias": [
+            "ropa interior",
+            "armani",
+            "hombre",
+            "gris",
+            "algodon"
+        ]
     },
     {
         "id": 78,
@@ -493,7 +898,14 @@
         "descripcion": "Boxer estampado color blanco y negro con diseño Diesel",
         "precio": 27.99,
         "marca": "Diesel",
-        "img_url": "img78.jpg"
+        "img_url": "img78.jpg",
+        "categorias": [
+            "ropa interior",
+            "diesel",
+            "hombre",
+            "blanco",
+            "algodon"
+        ]
     },
     {
         "id": 79,
@@ -501,7 +913,14 @@
         "descripcion": "Boxer de algodón color rojo con logo Polo Ralph Lauren",
         "precio": 36.99,
         "marca": "Polo Ralph Lauren",
-        "img_url": "img79.jpg"
+        "img_url": "img79.jpg",
+        "categorias": [
+            "ropa interior",
+            "ralph lauren",
+            "hombre",
+            "rojo",
+            "algodon"
+        ]
     },
     {
         "id": 80,
@@ -509,7 +928,14 @@
         "descripcion": "Calzoncillos de algodón color negro con elástico Calvin Klein",
         "precio": 24.99,
         "marca": "Calvin Klein",
-        "img_url": "img80.jpg"
+        "img_url": "img80.jpg",
+        "categorias": [
+            "ropa interior",
+            "calvin klein",
+            "mujer",
+            "negro",
+            "algodon"
+        ]
     },
     {
         "id": 81,
@@ -517,7 +943,14 @@
         "descripcion": "Braga de encaje color rosa con detalles Victoria's Secret",
         "precio": 29.99,
         "marca": "Victoria's Secret",
-        "img_url": "img81.jpg"
+        "img_url": "img81.jpg",
+        "categorias": [
+            "ropa interior",
+            "victorias secret",
+            "mujer",
+            "rosa",
+            "encaje"
+        ]
     },
     {
         "id": 82,
@@ -525,7 +958,14 @@
         "descripcion": "Shorts deportivos color negro con las tres rayas de Adidas",
         "precio": 34.99,
         "marca": "Adidas",
-        "img_url": "img82.jpg"
+        "img_url": "img82.jpg",
+        "categorias": [
+            "shorts",
+            "adidas",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 83,
@@ -533,7 +973,14 @@
         "descripcion": "Shorts de tela transpirable color gris con logo Nike",
         "precio": 39.99,
         "marca": "Nike",
-        "img_url": "img83.jpg"
+        "img_url": "img83.jpg",
+        "categorias": [
+            "shorts",
+            "nike",
+            "hombre",
+            "gris",
+            "poliester"
+        ]
     },
     {
         "id": 84,
@@ -541,7 +988,14 @@
         "descripcion": "Shorts deportivos color azul marino con logo Puma",
         "precio": 29.99,
         "marca": "Puma",
-        "img_url": "img84.jpg"
+        "img_url": "img84.jpg",
+        "categorias": [
+            "shorts",
+            "puma",
+            "hombre",
+            "azul",
+            "poliester"
+        ]
     },
     {
         "id": 85,
@@ -549,7 +1003,14 @@
         "descripcion": "Shorts vaqueros color azul con diseño clásico Levi's",
         "precio": 49.99,
         "marca": "Levi's",
-        "img_url": "img85.jpg"
+        "img_url": "img85.jpg",
+        "categorias": [
+            "shorts",
+            "levis",
+            "hombre",
+            "azul",
+            "mezclilla"
+        ]
     },
     {
         "id": 86,
@@ -557,7 +1018,14 @@
         "descripcion": "Shorts deportivos color negro con tecnología HeatGear Under Armour",
         "precio": 44.99,
         "marca": "Under Armour",
-        "img_url": "img86.jpg"
+        "img_url": "img86.jpg",
+        "categorias": [
+            "shorts",
+            "under armour",
+            "hombre",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 87,
@@ -565,7 +1033,14 @@
         "descripcion": "Shorts deportivos color rosa con las tres rayas de Adidas",
         "precio": 29.99,
         "marca": "Adidas",
-        "img_url": "img87.jpg"
+        "img_url": "img87.jpg",
+        "categorias": [
+            "shorts",
+            "adidas",
+            "mujer",
+            "rosa",
+            "poliester"
+        ]
     },
     {
         "id": 88,
@@ -573,7 +1048,14 @@
         "descripcion": "Shorts de tela transpirable color negro con logo Nike",
         "precio": 34.99,
         "marca": "Nike",
-        "img_url": "img88.jpg"
+        "img_url": "img88.jpg",
+        "categorias": [
+            "shorts",
+            "nike",
+            "mujer",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 89,
@@ -581,7 +1063,14 @@
         "descripcion": "Shorts deportivos color morado con logo Puma",
         "precio": 24.99,
         "marca": "Puma",
-        "img_url": "img89.jpg"
+        "img_url": "img89.jpg",
+        "categorias": [
+            "shorts",
+            "puma",
+            "mujer",
+            "morado",
+            "poliester"
+        ]
     },
     {
         "id": 90,
@@ -589,7 +1078,14 @@
         "descripcion": "Shorts vaqueros color blanco con diseño moderno Levi's",
         "precio": 39.99,
         "marca": "Levi's",
-        "img_url": "img90.jpg"
+        "img_url": "img90.jpg",
+        "categorias": [
+            "shorts",
+            "levis",
+            "mujer",
+            "blanco",
+            "mezclilla"
+        ]
     },
     {
         "id": 91,
@@ -597,7 +1093,14 @@
         "descripcion": "Shorts deportivos color azul con tecnología HeatGear Under Armour",
         "precio": 39.99,
         "marca": "Under Armour",
-        "img_url": "img91.jpg"
+        "img_url": "img91.jpg",
+        "categorias": [
+            "shorts",
+            "under armour",
+            "mujer",
+            "azul",
+            "poliester"
+        ]
     },
     {
         "id": 92,
@@ -605,7 +1108,14 @@
         "descripcion": "Bufanda de lana tejida color gris oscuro para hombres",
         "precio": 39.99,
         "marca": "H&M",
-        "img_url": "img92.jpg"
+        "img_url": "img92.jpg",
+        "categorias": [
+            "bufandas",
+            "h&m",
+            "hombre",
+            "gris",
+            "lana"
+        ]
     },
     {
         "id": 93,
@@ -613,7 +1123,14 @@
         "descripcion": "Bufanda de punto grueso color azul marino para hombres",
         "precio": 29.99,
         "marca": "Zara",
-        "img_url": "img93.jpg"
+        "img_url": "img93.jpg",
+        "categorias": [
+            "bufandas",
+            "zara",
+            "hombre",
+            "azul",
+            "lana"
+        ]
     },
     {
         "id": 94,
@@ -621,7 +1138,14 @@
         "descripcion": "Bufanda de lana suave color rosa pálido para mujeres",
         "precio": 44.99,
         "marca": "Mango",
-        "img_url": "img94.jpg"
+        "img_url": "img94.jpg",
+        "categorias": [
+            "bufandas",
+            "mango",
+            "mujer",
+            "rosa",
+            "lana"
+        ]
     },
     {
         "id": 95,
@@ -629,7 +1153,14 @@
         "descripcion": "Bufanda de alpaca tejida a mano color crema para mujeres",
         "precio": 59.99,
         "marca": "Pull&Bear",
-        "img_url": "img95.jpg"
+        "img_url": "img95.jpg",
+        "categorias": [
+            "bufandas",
+            "pull&bear",
+            "mujer",
+            "crema",
+            "alpaca"
+        ]
     },
     {
         "id": 96,
@@ -637,7 +1168,14 @@
         "descripcion": "Bufanda de seda estampada color rojo y negro para mujeres",
         "precio": 49.99,
         "marca": "Massimo Dutti",
-        "img_url": "img96.jpg"
+        "img_url": "img96.jpg",
+        "categorias": [
+            "bufandas",
+            "massimo dutti",
+            "mujer",
+            "rojo",
+            "seda"
+        ]
     },
     {
         "id": 97,
@@ -645,7 +1183,14 @@
         "descripcion": "Vestido de punto midi con cuello redondo y manga larga",
         "precio": 49.99,
         "marca": "Zara",
-        "img_url": "img97.jpg"
+        "img_url": "img97.jpg",
+        "categorias": [
+            "vestidos",
+            "zara",
+            "mujer",
+            "punto",
+            "algodon"
+        ]
     },
     {
         "id": 98,
@@ -653,7 +1198,14 @@
         "descripcion": "Vestido camisero a rayas con cinturón y mangas largas",
         "precio": 59.99,
         "marca": "Mango",
-        "img_url": "img98.jpg"
+        "img_url": "img98.jpg",
+        "categorias": [
+            "vestidos",
+            "mango",
+            "mujer",
+            "rayas",
+            "algodon"
+        ]
     },
     {
         "id": 99,
@@ -661,7 +1213,14 @@
         "descripcion": "Vestido skater estampado floral con escote en V y mangas cortas",
         "precio": 39.99,
         "marca": "H&M",
-        "img_url": "img99.jpg"
+        "img_url": "img99.jpg",
+        "categorias": [
+            "vestidos",
+            "h&m",
+            "mujer",
+            "floral",
+            "poliester"
+        ]
     },
     {
         "id": 100,
@@ -669,7 +1228,14 @@
         "descripcion": "Vestido largo de fiesta con escote halter y detalle de pedrería",
         "precio": 99.99,
         "marca": "Massimo Dutti",
-        "img_url": "img100.jpg"
+        "img_url": "img100.jpg",
+        "categorias": [
+            "vestidos",
+            "massimo dutti",
+            "mujer",
+            "fiesta",
+            "poliester"
+        ]
     },
     {
         "id": 101,
@@ -677,7 +1243,14 @@
         "descripcion": "Vestido midi de encaje con cuello en V y manga corta",
         "precio": 79.99,
         "marca": "Zara",
-        "img_url": "img101.jpg"
+        "img_url": "img101.jpg",
+        "categorias": [
+            "vestidos",
+            "zara",
+            "mujer",
+            "encaje",
+            "poliester"
+        ]
     },
     {
         "id": 102,
@@ -685,7 +1258,14 @@
         "descripcion": "Vestido tubo ajustado de color negro con escote corazón",
         "precio": 29.99,
         "marca": "H&M",
-        "img_url": "img102.jpg"
+        "img_url": "img102.jpg",
+        "categorias": [
+            "vestidos",
+            "h&m",
+            "mujer",
+            "negro",
+            "poliester"
+        ]
     },
     {
         "id": 103,
@@ -693,7 +1273,14 @@
         "descripcion": "Vestido midi plisado con estampado de lunares y cuello halter",
         "precio": 34.99,
         "marca": "Zara",
-        "img_url": "img103.jpg"
+        "img_url": "img103.jpg",
+        "categorias": [
+            "vestidos",
+            "zara",
+            "mujer",
+            "lunares",
+            "poliester"
+        ]
     },
     {
         "id": 104,
@@ -701,7 +1288,14 @@
         "descripcion": "Vestido corto de fiesta con escote pronunciado y detalle de pedrería",
         "precio": 69.99,
         "marca": "Mango",
-        "img_url": "img104.jpg"
+        "img_url": "img104.jpg",
+        "categorias": [
+            "vestidos",
+            "mango",
+            "mujer",
+            "fiesta",
+            "poliester"
+        ]
     },
     {
         "id": 105,
@@ -709,7 +1303,14 @@
         "descripcion": "Vestido maxi con estampado floral y escote bardot",
         "precio": 49.99,
         "marca": "Massimo Dutti",
-        "img_url": "img105.jpg"
+        "img_url": "img105.jpg",
+        "categorias": [
+            "vestidos",
+            "massimo dutti",
+            "mujer",
+            "floral",
+            "algodon"
+        ]
     },
     {
         "id": 106,
@@ -717,7 +1318,14 @@
         "descripcion": "Vestido corto de punto con detalle de botones en la parte delantera",
         "precio": 24.99,
         "marca": "H&M",
-        "img_url": "img106.jpg"
+        "img_url": "img106.jpg",
+        "categorias": [
+            "vestidos",
+            "h&m",
+            "mujer",
+            "punto",
+            "algodon"
+        ]
     },
     {
         "id": 107,
@@ -725,7 +1333,14 @@
         "descripcion": "Traje de corte slim fit en color azul marino, incluye saco y pantalón",
         "precio": 199.99,
         "marca": "Zara",
-        "img_url": "img107.jpg"
+        "img_url": "img107.jpg",
+        "categorias": [
+            "trajes",
+            "zara",
+            "hombre",
+            "azul",
+            "lana"
+        ]
     },
     {
         "id": 108,
@@ -733,7 +1348,14 @@
         "descripcion": "Traje clásico de color negro, incluye saco de dos botones y pantalón a juego",
         "precio": 249.99,
         "marca": "Hugo Boss",
-        "img_url": "img108.jpg"
+        "img_url": "img108.jpg",
+        "categorias": [
+            "trajes",
+            "hugo boss",
+            "hombre",
+            "negro",
+            "lana"
+        ]
     },
     {
         "id": 109,
@@ -741,7 +1363,14 @@
         "descripcion": "Traje elegante de color gris oscuro con corte entallado, ideal para ocasiones formales",
         "precio": 299.99,
         "marca": "Armani",
-        "img_url": "img109.jpg"
+        "img_url": "img109.jpg",
+        "categorias": [
+            "trajes",
+            "armani",
+            "hombre",
+            "gris",
+            "lana"
+        ]
     },
     {
         "id": 110,
@@ -749,7 +1378,14 @@
         "descripcion": "Traje de corte slim fit con estampado de cuadros, incluye saco y pantalón",
         "precio": 179.99,
         "marca": "Tommy Hilfiger",
-        "img_url": "img110.jpg"
+        "img_url": "img110.jpg",
+        "categorias": [
+            "trajes",
+            "tommy hilfiger",
+            "hombre",
+            "cuadros",
+            "lana"
+        ]
     },
     {
         "id": 111,
@@ -757,6 +1393,13 @@
         "descripcion": "Traje formal en color gris claro con pantalón recto y saco de dos botones",
         "precio": 219.99,
         "marca": "Calvin Klein",
-        "img_url": "img111.jpg"
+        "img_url": "img111.jpg",
+        "categorias": [
+            "trajes",
+            "calvin klein",
+            "hombre",
+            "gris",
+            "lana"
+        ]
     }
 ]

@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface Props {
   title: string;
   full_description: string;
@@ -14,7 +16,7 @@ export default function SectionLarge({
   pageHeaderMinVh,
   pageHeaderRadius,
   linkbtn,
-}: Props) {
+}: Props){
 
   const styles = {
     pageHeader: {

@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import { AuthComponent } from "../components/Auth";
+
+---
+
+<Layout title="Registrarse">
+    <Navbar client:load/>
+    <main class="flex items-center justify-center h-screen bg-gray-900">
+        <AuthComponent client:load/>
+    </main>
+</Layout>

@@ -2,15 +2,16 @@
 import CardProduct from "../components/CardProduct";
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
-import { productos } from "../../data/data";
+import { Products } from "../components/Products";
+import { useEffect } from "react";
+import { getPrendas } from "../api/services/prendaService";
+
+
 ---
 
 <Layout title="Productos">
-    <Navbar />
-    <div class="flex flex-wrap justify-center gap-4 p-2 mt-28">
-        {productos.map((product) => (
-            <CardProduct producto={product} />
-        ))}
+    <Navbar client:load/>
+    <div class="flex flex-wrap justify-center gap-4 p-2 pt-28">
+        <Products client:load/>
     </div>
-  <h1>Home</h1>
 </Layout>

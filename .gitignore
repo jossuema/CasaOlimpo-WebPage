@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 public/images/staff/
 public/images/products/
+
+firebase.config.ts

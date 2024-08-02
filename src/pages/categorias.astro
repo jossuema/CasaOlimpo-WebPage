@@ -1,79 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
-import CategoryCarrusel from "../components/CategoryCarrusel";
-import { fetchData, fetchProductsByCategory } from "../services/fetchData";
-import CardProducto from "../components/CardProduct";
-
-const categorias = [
-    ""
-]
-
-const  marcas: string[] = [
-  "Adidas",
-  "New Era",
-  "Under Armour",
-  "Levi's",
-  "Puma",
-  "The North Face",
-  "Nike",
-  "Patagonia",
-  "Tommy Hilfiger",
-  "Calvin Klein",
-  "Dockers",
-  "Ralph Lauren",
-  "H&M",
-  "Zara",
-  "Mango",
-  "Uniqlo",
-  "Hugo Boss",
-  "Reebok",
-  "Converse",
-  "Timberland",
-  "GAP",
-  "Wrangler",
-  "Vans",
-  "Skechers",
-  "Banana Republic",
-  "Hanes",
-  "Champion",
-  "Fruit of the Loom",
-  "Lacoste",
-  "Armani Exchange",
-  "Diesel",
-  "Polo Ralph Lauren",
-  "Victoria's Secret",
-  "Columbia",
-  "Massimo Dutti",
-  "Pull&Bear"
-];
-
-const productosNike = fetchProductsByCategory("nike");
-console.log(productosNike);
-
-const productosAdidas = fetchProductsByCategory("adidas");
-const productosNewEra = fetchProductsByCategory("new era");
-const productosPuma = fetchProductsByCategory("puma");
-const productosMedias = fetchProductsByCategory("medias");
-const productosZapatos = fetchProductsByCategory("zapatos");
-const productosCamisetas = fetchProductsByCategory("camisetas");
-const productosPantalones = fetchProductsByCategory("pantalones");
-const produtocsHoody = fetchProductsByCategory("hoody");
+import { Products } from "../components/Products";
 
 ---
 
 <Layout title="Categorias">
-    <Navbar />
+    <Navbar client:load/>
+
     <div class="bg-slate-200" id="camisetas">
         <div class="bg-black flex items-center justify-center">
             <h1 class="mt-32 text-2xl text-white text-center" >CAMISETAS</h1>
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosCamisetas.map((producto) => (
-                <CardProducto producto={producto} />
-            ))
-            }
+            <Products categoria="Camiseta" client:load/>
         </div>
     </div>
     <div class="bg-slate-200" id="camisetas">
@@ -82,34 +23,15 @@ const produtocsHoody = fetchProductsByCategory("hoody");
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosPantalones.map((producto) => (
-                <CardProducto producto={producto} />
-            ))
-            }
-        </div>
-    </div>
-    <div class="bg-slate-200">
-        <div class="bg-black flex items-center justify-center">
-            <h1 class="mt-32 text-2xl text-white text-center" >ZAPATOS</h1>
-        </div>
-        
-        <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosZapatos.map((producto) => (
-                <CardProducto producto={producto} />
-            ))
-            }
+            <Products categoria="Pantalones" client:load/>
         </div>
     </div>
     <div class="bg-slate-200">
         <div class="bg-black flex items-center justify-center">
             <h1 class="mt-32 text-2xl text-white text-center" >MEDIAS</h1>
         </div>
-        
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosMedias.map((producto) => (
-                <CardProducto producto={producto} />
-            ))
-            }
+            <Products categoria="Calcetines" client:load/>
         </div>
     </div>
     <div class="bg-slate-200">
@@ -118,10 +40,7 @@ const produtocsHoody = fetchProductsByCategory("hoody");
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosNike.map((producto) => (
-                <CardProducto producto={producto} />
-            ))
-            }
+            <Products marca="Nike" client:load/>
         </div>
     </div>
     <div class="bg-slate-200">
@@ -130,9 +49,7 @@ const produtocsHoody = fetchProductsByCategory("hoody");
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosAdidas.map((producto) => (
-                <CardProducto producto={producto} />
-            ))}
+            <Products marca="Adidas" client:load/>    
         </div>
     </div>
     <div class="bg-slate-200">
@@ -141,9 +58,7 @@ const produtocsHoody = fetchProductsByCategory("hoody");
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosPuma.map((producto) => (
-                <CardProducto producto={producto} />
-            ))}
+            <Products marca="Puma" client:load/>
         </div>
     </div>
     <div class="bg-slate-200">
@@ -152,9 +67,7 @@ const produtocsHoody = fetchProductsByCategory("hoody");
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 p-2 mt-2">
-            {productosNewEra.map((producto) => (
-                <CardProducto producto={producto} />
-            ))}
+            <Products marca="New Era" client:load/>    
         </div>
     </div>
 </Layout>

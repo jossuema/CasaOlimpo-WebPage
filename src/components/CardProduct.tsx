@@ -1,42 +1,42 @@
 import React from "react";
 import { formatPrice } from "../utils";
-import type { Producto } from "../services/fetchData";
+import type { Prenda } from "../api/schemas/prenda";
 
 interface CardProductProps {
-  producto: Producto;
+  prenda: Prenda;
 }
 
-const CardProduct = ({producto}:CardProductProps) => {
+const CardProduct = ({prenda}:CardProductProps) => {
   const url = "../../public/images/products/"
 
   return (
-    <div className="w-80 rounded overflow-hidden shadow-lg bg-white" key={producto.id}>
-      <div className="flex justify-center items-center h-52 overflow-hidden"> {/* Ajustado para flexbox */}
+    <div className="w-80 rounded overflow-hidden shadow-lg bg-white" key={prenda.id_prenda}>
+      <div className="flex justify-center items-center h-52 overflow-hidden">
         <img
           className="h-52 object-cover"
-          src={url + producto.img_url}
-          alt="card-image"
+          src={url + prenda.img_prenda}
+          alt={prenda.nombre_prenda}
         />
       </div>
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{producto.nombre}</div>
-        <p className="text-gray-700 text-base mb-4">
-          {producto.descripcion}
+        <div className="font-bold text-xl mb-2">{prenda.nombre_prenda}</div>
+        <p className="text-gray-700 text-base mb-2">
+          {prenda.descripcion_prenda}
         </p>
-        <p className="text-gray-700 text-base mb-4">
-          {producto.marca}
+        <p className="text-gray-700 text-base mb-2">
+          Marca: {prenda.marca.nombre_marca}
         </p>
-        <div className="font-bold text-xl mb-2">{formatPrice(producto.precio)}</div>
+        <p className="text-gray-700 text-base mb-2">
+          Talla: {prenda.talla_prenda}, Color: {prenda.color_prenda}
+        </p>
+        <div className="font-bold text-xl mb-2">{formatPrice(prenda.precio_prenda)}</div>
       </div>
-      <div className="categorias px-6 pt-1 pb-2">
-        {producto.categorias && producto.categorias.map((categoria) => (
-          <span
-            key={categoria}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-          >
-            {categoria}
-          </span>
-        ))}
+      <div className="px-6 pt-1 pb-2">
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          {prenda.categoria.nombre_categoria}
+        </span>
       </div>
       <div className="px-6 pt-1 pb-2">
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">

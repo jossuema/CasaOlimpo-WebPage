@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { register } from '../api/services/auth';
+import { register, login, saveToken } from '../api/services/auth';
 
 interface Props {
     toggle: () => void
@@ -33,16 +33,27 @@ export const Register = ({ toggle }: Props) => {
         return true;
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (validateForm()) {
-            alert('Registrando...');
-            try{
-                const response = register({email_usuario: email, clave_usuario: password, username_usuario: username});
-                console.log(response);
-            }catch(error){
-                console.error(error);
+        if (!validateForm()) return;
+
+        try {
+            const registerResponse = await register({ email_usuario: email, clave_usuario: password, username_usuario: username });
+            if (registerResponse.error) {
+                setError(registerResponse.error);
+                return;
             }
+            const loginResponse = await login(email, password);
+            if (loginResponse.error) {
+                setError(loginResponse.error);
+                return;
+            }
+            saveToken({ access_token: loginResponse.access_token, token_type: loginResponse.token_type });
+            setTimeout(() => {
+                window.location.href = '/registercliente';
+            }, 2000);
+        } catch (error) {
+            setError('Error al procesar la solicitud: ' + error);
         }
     };
 

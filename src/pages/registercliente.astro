@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import { RegisterCliente } from "../components/RegisterCliente";
+
+---
+
+<Layout title="Registrarse">
+    <Navbar client:load/>
+    <main class="flex items-center justify-center h-screen bg-gray-900">
+       <RegisterCliente client:load/>
+    </main>
+</Layout>

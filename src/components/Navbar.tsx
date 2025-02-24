@@ -43,7 +43,7 @@ const Navbar = () => {
                 {item.text}</a>
             </li>
           ))}
-          {isLogged ?
+          {isLogged &&
             (<>
               <li
                 className='p-4 hover:bg-[#000000] rounded-xl m-2 cursor-pointer duration-300 hover:text-white hover:shadow-lg'
@@ -61,11 +61,7 @@ const Navbar = () => {
               >
                 <a href='/cart'>CART</a>
               </li>
-            </>) :
-            (<li
-              className='p-4 hover:bg-[#000000] rounded-xl m-2 cursor-pointer duration-300 hover:text-white hover:shadow-lg'>
-              <a href='/auth'>LOGIN</a>
-            </li>)
+            </>)
           }
         </ul>
       </div>

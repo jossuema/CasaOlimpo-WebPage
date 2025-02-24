@@ -7,14 +7,13 @@ interface CardProductProps {
 }
 
 const CardProduct = ({prenda}:CardProductProps) => {
-  const url = "../../public/images/products/"
 
   return (
     <div className="w-80 rounded overflow-hidden shadow-lg bg-white" key={prenda.id_prenda}>
       <div className="flex justify-center items-center h-52 overflow-hidden">
         <img
           className="h-52 object-cover"
-          src={url + prenda.img_prenda}
+          src={prenda.img_prenda}
           alt={prenda.nombre_prenda}
         />
       </div>
@@ -37,11 +36,6 @@ const CardProduct = ({prenda}:CardProductProps) => {
         >
           {prenda.categoria.nombre_categoria}
         </span>
-      </div>
-      <div className="px-6 pt-1 pb-2">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Agregar al carrito
-        </button>
       </div>
     </div>
   );

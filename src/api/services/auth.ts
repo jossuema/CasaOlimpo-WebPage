@@ -1,6 +1,6 @@
 import { apiURL } from "../api";
 import type { Token } from "../schemas/token";
-import type { userCreate } from "../schemas/user";
+import type { userCreate, user } from "../schemas/user";
 
 export const login = async (email: string, password: string): Promise<any> => {
   console.log(email, password);
@@ -38,7 +38,7 @@ export const login = async (email: string, password: string): Promise<any> => {
   return response.json();
 };
 
-export const register = async ({email_usuario, clave_usuario, username_usuario}: userCreate) => {
+export const register = async ({email_usuario, clave_usuario, username_usuario}: userCreate): Promise<any> => {
   const response = await fetch(`${apiURL}usuarios`, {
     method: "POST",
     headers: {
@@ -47,9 +47,10 @@ export const register = async ({email_usuario, clave_usuario, username_usuario}:
     body: JSON.stringify({email_usuario, clave_usuario, username_usuario}),
   });
 
-  if (!response.ok) {
-    throw new Error("Failed to register");
-  }
+  if (response.status === 401) {
+    console.error("Invalid credentials");
+    throw new Error("Invalid credentials");  // Es útil lanzar un error para manejarlo más adelante.
+}
 
   return response.json();
 }

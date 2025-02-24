@@ -1,1 +1,1 @@
-export const apiURL = 'http://localhost:8000/api/public/';
+export const apiURL = 'https://apicasaolimpo-eyf2deakbhfgc3au.centralus-01.azurewebsites.net/api/public/';
